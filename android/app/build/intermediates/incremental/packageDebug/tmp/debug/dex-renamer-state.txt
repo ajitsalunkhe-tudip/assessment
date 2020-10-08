@@ -1,0 +1,4 @@
+#Wed Oct 07 11:55:27 IST 2020
+base.0=/Users/mm-14/Documents/ajit/Dummy/Assignment/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
