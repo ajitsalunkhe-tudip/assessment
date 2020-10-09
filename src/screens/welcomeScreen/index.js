@@ -1,3 +1,4 @@
+//@flow
 import React, { Component } from 'react';
 import { View, ScrollView , TouchableOpacity, Text, TextInput, Image } from 'react-native'
 import style from './style';
@@ -6,7 +7,11 @@ import { screenNames } from '../../routes/helper';
 import {saveUserName} from './../../redux/actions';
 import { connect } from 'react-redux';
 
-class WelcomeScreen extends Component {
+type Props = {
+    className?: string,
+    disabled?: boolean
+};
+class WelcomeScreen extends Component<{Props}>{
     state = {
         userName: undefined,
         userNameError: undefined

@@ -1,10 +1,16 @@
+//@flow
 import React, { Component } from 'react';
 import {View, Text, Image} from 'react-native';
 import { screenNames } from '../../routes/helper';
 import style from './style';
 import Images from '../../assets';
 
-class SplashScreen extends Component {
+type Props = {
+  className?: string,
+  disabled?: boolean
+};
+
+class SplashScreen extends Component<{Props}> {
     
     componentDidMount() {
         setTimeout(() => {

@@ -1,3 +1,4 @@
+//@flow
 import { USERNAME } from "./actions";
 let dataState = {
 	userName: '',

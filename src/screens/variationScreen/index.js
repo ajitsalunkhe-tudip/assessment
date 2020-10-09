@@ -1,3 +1,4 @@
+//@flow
 import React, { Component } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native'
 import style from './style';
@@ -6,7 +7,12 @@ import { connect } from 'react-redux';
 import SwipeButton from 'rn-swipe-button';
 import thumbIcon from '../../assets/diamond.png';
 
-class VariationScreen extends Component{
+type Props = {
+    className?: string,
+    disabled?: boolean
+};
+
+class VariationScreen extends Component<{Props}>{
 
     validate = () => {
         this.props.navigation.navigate(screenNames.thankyouScreen);

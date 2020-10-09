@@ -1,9 +1,14 @@
+//@flow
 import React, { Component } from 'react';
 import { View, Text  } from 'react-native'
 import style from './style';
 import { connect } from 'react-redux';
 
-class ThankyouScreen extends Component {
+type Props = {
+    className?: string,
+    disabled?: boolean
+};
+class ThankyouScreen extends Component<{Props}> {
     
 render() {
     return (
